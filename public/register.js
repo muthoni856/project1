@@ -3,32 +3,20 @@ const nextBtns=document.querySelectorAll(".btn-next");
 const progress=document.queryElementId(".progress");
 const formSteps=document.querySelectorAll(".form-step");
 
- let formstepsNum=0;
- console.log(formstepsNum);
- const btn=document.getElementsByClassName('btn btn-next width-50 ml-auto');
+ let formStepsNum=0;
 
-
-    btn.addEventListener("click",()=>{
-formstepsNum++;
-
-console.log(formstepsNum);
-
-
-updateFormSteps();
-    });
-
-
-
-prevBtns.forEach((btn)=>{
-    btn.addEventListener("click",()=>{
-formstepsNum--;
-updateFormSteps();
-    });
+ nextBtns.forEach((btn) =>{
+    btn.addEventListener("click", () =>{
+    formStepsNum++;
+    updateFormSteps();
+ });
 });
+
+
 function updateFormSteps(){
-    formSteps.forEach(formStep=>{
-        formStep.classList.contains("form-step-active")&&
-        formStep.classList.remove("form-step-active");
-    });
-    formSteps[formstepsNum].classList.add("form-step-active");
+    formSteps[formstepsNum].classListadd("form-step-active");
 }
+
+
+
+

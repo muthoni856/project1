@@ -20,9 +20,9 @@ background-size: cover;
     display:flex;
     justify-content:space-between;
     counter-reset: step;
-    margin:3rem 0 4rem;
+    margin:2rem 0 4rem;
 }
-.progressbar::before,.progress{
+.progressbar::before, .progress{
     content:"";
     position:absolute;
     top:50%;
@@ -151,7 +151,7 @@ margin-right:3px;
     gap:1.5rem;
 }
 .btn{
-    width:100%;
+    width:20%;
     height:20px;
     border-radius: 40px;
     display:block;

@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Fitness Fussion</title>
-
-
-    <link href="register.css" rel="stylesheet">
-    <script src="{{mix('js/app.js')}}"></script>
-
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="register.css" rel="stylesheet"/>
+    <script src="register.js" defer></script>
+    <title>Fitness Fusion</title>
 
 </head>
 
@@ -23,12 +19,14 @@
                 <h2 class="text-center">Sign up</h2>
                 <!--ProgressBar-->
 <div class="progressbar">
-    <div class="progress" id="progress"></div>
+<div class="progress" id="progress"></div>
+
     <div class="progress-step progress-step-active" data-title="Intro"></div>
     <div class="progress-step"data-title="Personal Info"></div>
     <div class="progress-step"data-title="Goal"></div>
 </div>
                 <!--Progress bar1-->
+                <div class="form-step form-step-active">
 
                 <div class="inputbox">
                     <ion-icon name="mail-outline"></ion-icon>
@@ -61,11 +59,12 @@
 
                 </div>
 
-                <div class="btns-group">
-                    <p class="btn btn-next width-50 ml-auto">Next</p>
+                <div class="">
+                    <a href="#" class="btn btn-next width-20 ml-auto">NEXT</a>
+                </div>
 
 
-                <div class="register">
+            <div class="register">
                     <p>Already have an account?<a href="login.php">Log in</a></p>
                 </div>
 
